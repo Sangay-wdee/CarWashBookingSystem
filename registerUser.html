@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to avail services</title>
+    <link rel="stylesheet" href="registerUser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="topNav">
+        <div class="user">
+            <!-- <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a> -->
+            <img src="user.png" alt="" />
+            <a class="menu active">User</a>
+        </div>
+        <div class="sp">
+            <!-- <a href="https://www.flaticon.com/free-icons/professions-and-jobs" title="professions and jobs icons">Professions and jobs icons created by shmai - Flaticon</a> -->
+            <img src="washer.png" alt="" />
+            <a href="registerSP.html" class="menu">Service provider</a>
+        </div>
+    </div>
+    <form>
+        <h3>Register as user</h3>
+        <div class="content">
+            <div class="left">
+                <label for="username">Full Name</label>
+                <input type="text" placeholder="privide your name" id="username" required>
+                
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" required>
+        
+                <label for="number">Contact Number</label>
+                <input type="numner" placeholder="Provide your contact number" id="contact_number" maxlenght="8" required>
+        
+                <label for="Vehicle Type">Vehicle Type</label>
+                <input type="text" placeholder="Provide your vehicle type" id="vehicle_type" required>
+            </div>
+            <div class="right">
+                <label for="Vehicle Number">Vehicle Number</label>
+                <input type="text" placeholder="Provide your vehicle number" id="vehicle_number" required>
+                
+                <label for="password">Password</label>
+                <input type="password" placeholder="Provide your password" id="password" required>
+                <i class="far fa-eye-slash" id="togglePassword_1"></i>
+        
+                <label for="Confirm password">Confirm Password</label>
+                <input type="password" placeholder="Provide your password again" id="confirm_password" required>
+                <i class="far fa-eye-slash" id="togglePassword_2"></i>
+            </div>
+        </div>
+        <button id="userRegBtn" onclick="userSignUp()">Sign Up</button>
+    </form>
+    
+    <script src="registerUser.js"></script>
+</body>
+</html>

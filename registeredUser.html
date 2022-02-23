@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
+    <link rel="stylesheet" href="registeredUser.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header id="site-header">
+            <div class="logo">
+                <img id="logo" src="https://img.icons8.com/ios/50/000000/automatic-car-wash.png"/>
+                <h2>CarWash</h2>
+            </div>
+            <nav id="navbar">
+                <a id="menu1" href="#" class='menu active'>Home</a>
+                <a id="menu2" href="booking.html" class="menu">Booking</a>
+                <a id="menu2" href="#" class="menu">Services</a>
+                <a id="menu3" href="#" class="menu">About Us</a>
+            </nav>
+            <div class="rightCompo">
+                <a href="userprofile.html" id="u-profile"><i class="fa fa-user fa-lg"></i></a>
+                <h3>User Name</h3>
+                <div class="dropdown">
+                    <i class="fa fa-bars fa-2x" onclick="myFunction()" id="hamburg" style="cursor:pointer;"></i>
+                   <div id="myDropdown" class="dropdown-content">
+                      <a href="#">profile</a>
+                      <a href="#">feedback</a>
+                      <a href="">services</a>
+                      <a href="landingPage.html" id="logOut" onclick="logOut()">logout</a>
+                    </div>
+                </div>
+            </div>  
+        </header>
+    
+        <!-- body content -->
+        <div class="content">
+            <img src="car.jpg" />
+           <div class="imgWording">
+               <h2>Online Car Wash Booking System</h2>
+               <!-- <h3>Online</h3>
+               <h2>Car Wash</h2>
+               <h3>Booking System</h3> -->
+           </div>
+           <div class="slogan">
+               <p>Enjoy our fast and friendly service 🚧 💦</p>
+               <p>It’s fast, it’s friendly – and it was never this easy to get a car wash so good</p> 
+           </div>
+           <div class="instruction">
+               <p>Services</p>
+           </div>
+           <div class="parentWrapper">
+               <div class="subDiv1">
+                   <h2>Interior Car Wash</h2>
+                   <img src="interior.jpg" alt="" width="100%"/>
+                   <!-- <p>It has multiple services such as Interior & Exterior Wash, Polising, Engine Wash and Vacuum Clean</p> -->
+                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+               <div class="subDiv1">
+                   <h2>Exterior Car Wash</h2>
+                   <img src="exterior.jpg" alt="" width="100%"/>
+                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+                   <!-- <p>It includes repairing of the car parts that needs to be repaired such as headlight, mirror and so on</p> -->
+               </div>
+               <div class="subDiv1">
+                   <h2>Polishing</h2>
+                   <img src="polishing.jpg" alt="" width="100%"/>
+                   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                   
+                   <!-- <p>The critical fluids in the engine, such as antifreeze, brake fluid, washer fluid, and steering fluid, are topped up, as well as a visual inspection and oil and filter change. Also, to ensure that the vehicle is in the best possible condition.</p> -->
+               </div>
+               <div class="subDiv1">
+                    <h2>Vacuum Cleaning</h2>
+                    <img src="vacuum.jpg" alt="" width="100%"/>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                    
+                    <!-- <p>The critical fluids in the engine, such as antifreeze, brake fluid, washer fluid, and steering fluid, are topped up, as well as a visual inspection and oil and filter change. Also, to ensure that the vehicle is in the best possible condition.</p> -->
+              </div>
+           </div>
+           <div class="instruction">
+            <p>Why should one use this booking system?</p>
+           </div>
+           <div class="parentWrapper2">
+                <div class="upperRow">
+                    <div class="subDiv2">
+                        <!-- <img src="https://cdn-icons.flaticon.com/png/512/1201/premium/1201512.png?token=exp=1644316067~hmac=79f6bb43d6b8619d249c43b140942031" alt="" /> -->
+                        <img src="247.png" />
+                        <h2>Anywhere, Anytime Reservation</h2>
+                        <p>Accept booking from any divice</p>
+                    </div>
+                    <div class="subDiv2">
+                        <!-- <img src="https://cdn-icons.flaticon.com/png/512/1287/premium/1287957.png?token=exp=1644316563~hmac=4fd7986291a60bd869423d9a42fc772f" alt="" /> -->
+                        <img src="realtime.png" />
+                        <h2>Real-Time Availability</h2>
+                        <p>User can see availability updated in real-time with our car wash booking system</p>
+                    </div>
+                </div>
+                <div class="lowerRow">
+                    <div class="subDiv2">
+                        <!-- <img src="https://cdn-icons.flaticon.com/png/512/2981/premium/2981245.png?token=exp=1644316688~hmac=aa794fdcf225c5fac8cf7714e0f36b75" alt="" /> -->
+                        <img src="savemoney.png" />
+                        <h2>Save Money</h2>
+                        <p>User need not have manually see for free car wash shops, thereby saves unnecessary use of the fule</p>
+                    </div>
+                    <div class="subDiv2">
+                        <!-- <img src="https://cdn-icons.flaticon.com/png/512/3133/premium/3133281.png?token=exp=1644316810~hmac=7fb2aec887ae2f7bdee0b397c252a39e" alt="" /> -->
+                        <img src="savetime.png" />
+                        <h2>Save Time</h2>
+                        <p>User need not have to wait in the queue at the car wash shops, they can reach the car wash shop at their desiginated time</p>
+                    </div>
+                </div>      
+        </div>
+        <div class="feedback">
+            <i class="far fa-comment-dots fa-lg"></i>
+            <p>Feedback</p>
+        </div>
+        <div class="feedbackBottom">
+            <div class="feedbackLink">
+                <i id="chat-bottom" class="far fa-comment-dots fa-2x"></i>
+                <p>Help us to improve. Click on <strong style="color:#4B95FF"> Chat icon</strong> to provide your <strong style="color:#4B95FF">Feedback</strong>.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy poliecy</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">how to book</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">tyre</a></li>
+                            <li><a href="#">hubcap</a></li>
+                            <li><a href="#">mirror</a></li>
+                            <li><a href="#">headlights</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="bottomDiv">
+            <p>Copyright &#169 2022 Car Wash Booking System</p>
+        </div>
+        </div>
+    </div>
+    
+    <script src="registeredUser.js"></script>
+</body>
+</html>
