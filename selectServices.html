@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="/your_path_to_version_6_files/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="selectServices.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="site-header">
+            <div class="logo">
+                <img id="logo" src="https://img.icons8.com/ios/50/000000/automatic-car-wash.png" />
+                <h2>CarWash</h2>
+            </div>
+            <nav id="navbar">
+                <a id="menu1" href="registeredUser.html">Home</a>
+                <a id="menu2" href="booking.html" class='menu active'>Booking</a>
+                <a id="menu2" href="#" class="menu">Services</a>
+                <a id="menu3" href="#" class="menu">About Us</a>
+            </nav>
+            <div class="rightCompo">
+                <a href="userprofile.html" id="u-profile"><i class="fa fa-user fa-lg"></i></a>
+                <h3>User Name</h3>
+                <div class="dropdown">
+                    <i class="fa fa-bars fa-2x" onclick="myFunction()" id="hamburg" style="cursor:pointer;"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">profile</a>
+                        <a href="#">feedback</a>
+                        <a href="">services</a>
+                        <a href="landingPage.html" id="logOut" onclick="logOut()">logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- body content -->
+
+        <div class="carWash">
+            <div class="title">
+                <h2>Noryang Car Wash</h2>
+            </div>
+            <div class="carWashWrapper">
+                <div class="image">
+                    <img src="noryang.jpg" alt="" />
+                </div>
+                <div class="contentWrapper">
+                    <div class="leftContents">
+                        <p>Select Service(s) from the following:</p>
+                        <div class="serviceTypes">
+                            <div class="checkBox">
+                                <input type="checkbox" value="" />
+                                <label>Interior Car Wash</label>
+                            </div>
+                            <div class="checkBox">
+                                <input type="checkbox" value="" />
+                                <label>Exterior Car Wash</label>
+                            </div>
+                            <div class="checkBox">
+                                <input type="checkbox" value="" />
+                                <label>Polishing</label>
+                            </div>
+                            <div class="checkBox">
+                                <input type="checkbox" value="" />
+                                <label>Vacuum Cleaning</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightContents">
+                        <div class="rightCompoClild">
+                            <div class="child1">
+                                <h4>Type Small</h4>
+                                <h4>Nu. 150</h4>
+                                <h5>Advance Payment 50%</h5>
+                                <h4>Nu. 70</h4>
+                            </div>
+                            <div class="child1">
+                                <h4>Type Medium</h4>
+                                <h4>Nu. 150</h4>
+                                <h5>Advance Payment 50%</h5>
+                                <h4>Nu. 70</h4>
+                            </div>
+                            <div class="child1">
+                                <h4>Type Heavy</h4>
+                                <h4>Nu. 150</h4>
+                                <h5>Advance Payment 50%</h5>
+                                <h4>Nu. 70</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <a href="bookingForm.html"><strong>Book</strong></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="100%" height="220" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=Noryang%20Auto%20Engg%20Worksbiles&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <br>
+                    <style>
+                        .mapouter {
+                            margin-bottom: 0.5rem;
+                            height: 220px;
+                            width: 100%;
+                        }
+                    </style><a href="https://www.embedgooglemap.net">google maps embed wordpress</a>
+                    <style>
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            height: 220px;
+                            width: 100%;
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy poliecy</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">how to book</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">tyre</a></li>
+                            <li><a href="#">hubcap</a></li>
+                            <li><a href="#">mirror</a></li>
+                            <li><a href="#">headlights</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="bottomDiv">
+            <p>Copyright &#169 2022 Car Wash Booking System</p>
+        </div>
+    </div>
+
+    <script src="selectServices.js"></script>
+</body>
+
+</html>
