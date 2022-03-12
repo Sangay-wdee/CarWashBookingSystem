@@ -120,13 +120,6 @@ nav a{
 .show {display: block;}
 
 
-
-
-
-
-
-
-
 /* content */
 .formFill{
     width: 100%;
@@ -480,5 +473,8 @@ ul{
         display: flex;
         flex-direction: column;
     }
-    
+    .sub1, .sub2{
+        display: flex;
+        flex-direction: column;
+    }
 }

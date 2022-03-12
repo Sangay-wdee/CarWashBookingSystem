@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="serviceSP.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="site-header">
+            <div class="logo">
+                <img id="logo" src="https://img.icons8.com/ios/50/000000/automatic-car-wash.png" />
+                <h2>CarWash</h2>
+            </div>
+            <nav id="navbar">
+                <a id="menu1" href="registeredSP.html" class='menu'>Reservations</a>
+                <a id="menu2" href="#" class="menu active">Services</a>
+            </nav>
+            <div class="rightCompo">
+                <a href="userprofile.html" id="u-profile"><i class="fa fa-user fa-lg"></i></a>
+                <h4>User Name</h4>
+                <div class="dropdown">
+                    <i class="fa fa-bars fa-2x" onclick="myFunction()" id="hamburg" style="cursor:pointer;"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">profile</a>
+                        <a href="#">feedback</a>
+                        <a href="">services</a>
+                        <a href="landingPage.html" id="logOut" onclick="logOut()">logout</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- body content -->
+        <div class="content">
+            <div id="myDIV" class="header">
+                <h2 style="margin:5px">Click to add services</h2>
+                <form>
+                    <select id="myInput">
+                        <option disabled selected hidden>select to add services</option>
+                        <option value="Interior Car Wash">Interior Car Wash</option>
+                        <option value="Exterior Car Wash">Exterior Car Wash</option>
+                        <option value="Vacuum">Vacuum</option>
+                        <option value="Polishing">Polishing</option>
+                    </select>
+                </form>
+
+                <!-- <input type="text" id="myInput" placeholder="Title..."> -->
+                <span onclick="newElement()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL">
+            </ul>
+
+            <div class="feedback">
+                <i class="far fa-comment-dots fa-lg"></i>
+                <p>Feedback</p>
+            </div>
+            <div class="feedbackBottom">
+                <div class="feedbackLink">
+                    <i id="chat-bottom" class="far fa-comment-dots fa-2x"></i>
+                    <p>Help us to improve. Click on <strong style="color:#4B95FF"> Chat icon</strong> to provide your
+                        <strong style="color:#4B95FF">Feedback</strong>.
+                    </p>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">privacy poliecy</a></li>
+                                <li><a href="#">contact us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>get help</h4>
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <!-- <li><a href="#">how to book</a></li>
+                                <li><a href="#">returns</a></li>
+                                <li><a href="#">order status</a></li>
+                                <li><a href="#">payment options</a></li> -->
+                            </ul>
+                        </div>
+                        <!-- <div class="footer-col">
+                            <h4>online shop</h4>
+                            <ul>
+                                <li><a href="#">tyre</a></li>
+                                <li><a href="#">hubcap</a></li>
+                                <li><a href="#">mirror</a></li>
+                                <li><a href="#">headlights</a></li>
+                            </ul>
+                        </div> -->
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="bottomDiv">
+                <p>Copyright &#169 2022 Car Wash Booking System</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="serviceSP.js"></script>
+</body>
+
+</html>
