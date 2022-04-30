@@ -41,6 +41,19 @@ form{
     box-shadow: 9px 10px 17px 2px rgba(75,149,255,0.75);
     padding: 50px, 35px;
 }
+.back-arrow{
+    position: absolute;
+    left: 15%;
+    top: 14%;
+}
+.back-arrow i{
+    color:#173051;
+    cursor: pointer;
+}
+.back-arrow i:hover{
+    /* border: 2px solid white; */
+    color: #4B95FF;
+}
 form *{
  font-family: 'poppins', sans-serif;
  color:#000000;

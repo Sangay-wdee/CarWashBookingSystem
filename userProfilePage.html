@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/45fa29d934.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="userProfilePage.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="back-arrow">
+            <a href="registeredUser.html">
+                 <i class="fa-solid fa-arrow-left fa-2xl"></i>
+            </a>
+        </div>
+        <div class="left">
+            <h2 style="font-family: 'Lobster', cursive;">Hello User</h2>
+            <h5 style="font-family: 'Roboto', sans-serif;">This is your profile page, where you can find information about yourself.</h5>
+        </div>
+        <div class="middle">
+            <div class="midcompo">
+                <img src="https://png.pngtree.com/png-vector/20191109/ourmid/pngtree-avatar-male-people-profile-flat-color-icon-vector-icon-bann-png-image_1968610.jpg" alt="img">
+                <h3 style="font-family: 'Lobster', cursive;">Pema Dorji</h3>
+                <div class="info">
+                    <label for="">Vehicle Type:</label>
+                    <h5>Prado</h5>
+                </div>
+                <div class="info">
+                    <label for="">Vehicle Number:</label>
+                    <h5>BP-1-d8010</h5>
+                </div>
+                <div class="info">
+                    <label for="">Contact Number:</label>
+                    <h5>12345678</h5>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <h5>To edit your information, click the Edit button, and to change your password, click the Change Password button.</h5>
+            <button id="rightBtn" onclick="editProfile()">Edit</button>
+            <button id="rightBtn" onclick="editPasswd()">Change Password</button>
+        </div>
+    </div>
+    <div class="editInfo" id="profileEdit">
+        <div class="middle">
+            <div class="midcompo">
+                <img src="https://png.pngtree.com/png-vector/20191109/ourmid/pngtree-avatar-male-people-profile-flat-color-icon-vector-icon-bann-png-image_1968610.jpg" alt="img">
+                <h3 style="font-family: 'Lobster', cursive;">Pema Dorji</h3>
+                <div class="info">
+                    <label for="">Vehicle Type:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label for="">Vehicle Number:</label>
+                    <input type="text">
+                </div>
+                <div class="info">
+                    <label for="">Contact Number:</label>
+                    <input type="text">
+                </div>
+                <div class="btns">
+                    <a id="editBtns" href="userProfilePage.html">Save change</a>
+                    <a id="editBtns" href="userProfilePage.html">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="changePassword" id="changePassword">
+            <div class="middle">
+                <div class="midcompo">
+                    <div class="info">
+                        <label for="">Current Password:</label>
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label for="">New Password:</label>
+                        <input type="text">
+                    </div>
+                    <div class="info">
+                        <label for="">Confirm Password:</label>
+                        <input type="text">
+                    </div>
+                    <div class="btns">
+                        <a id="editBtns" href="userProfilePage.html">Save change</a>
+                        <a id="editBtns" href="userProfilePage.html">Cancel</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="userProfilePage.js"></script>
+</body>
+</html>

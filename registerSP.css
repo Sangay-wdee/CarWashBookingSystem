@@ -91,7 +91,19 @@ form *{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+}
+.back-arrow{
+    position: absolute;
+    left: 7%;
+    top: 12%;
+}
+.back-arrow i{
+    color:#173051;
+    cursor: pointer;
+}
+.back-arrow i:hover{
+    /* border: 2px solid white; */
+    color: #4B95FF;
 }
 .left, .right{
     width: 45%;

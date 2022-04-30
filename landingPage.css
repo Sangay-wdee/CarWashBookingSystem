@@ -17,8 +17,6 @@ body{
 
 /* header */
 header{
-    /* background-color: #E1E4ED; */
-    /* background-color: #4B95FF; */
     background-color: white;
     width: 100%;
     display: flex;
@@ -29,10 +27,7 @@ header{
     position: fixed;
     z-index: 10;
     height: 14%;
-    border-bottom: 6px solid  
-    #173051;
-    /* border-top: 4px solid  
-    #173051; */
+    border-bottom: 6px solid #173051;
     transition: all 0.5s ease;
 }
 #site-header.hide{
@@ -50,11 +45,7 @@ header{
     width: 15%;
     height: 100%;
     color:#4B95FF;
-    /* color: white; */
 }
-/* .logo img{
-    background-color: white;
-} */
 nav{
     width: 30%;
     height: fit-content;
@@ -62,7 +53,6 @@ nav{
 
 nav a{
     color:#94989c;
-    /* color: white; */
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
