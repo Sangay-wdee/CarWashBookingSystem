@@ -125,6 +125,19 @@ nav a{
     width: 100%;
     margin-top: 8rem;
 }
+.back-arrow{
+    position: absolute;
+    left: 25%;
+    top: 22%;
+}
+.back-arrow i{
+    color:#173051;
+    cursor: pointer;
+}
+.back-arrow i:hover{
+    /* border: 2px solid white; */
+    color: #4B95FF;
+}
 .top-note{
     font-family: 'Montserrat', sans-serif;
     color: #173051;
