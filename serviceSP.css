@@ -16,8 +16,7 @@ body{
 }
 
 /* header */
-header{
-   
+header{ 
     background-color: white;
     width: 100%;
     display: flex;
@@ -125,7 +124,7 @@ nav a{
 
 /* content */
 .content{
-    margin-top: 13rem;
+    margin-top: 8rem;
     z-index: 1;
     width: 100%;
 }
@@ -253,10 +252,154 @@ nav a{
   .addBtn:hover {
     background-color: #bbb;
   }
-  
-  
+  /* #serviceDescription{
+    margin: 0 auto;
+    width: 80%;
+    background-color: yellow;
 
-
+  }
+  #serviceDescription input{
+      margin: 0 auto;
+      width: 80%;
+      padding: 1rem;
+  } */
+  
+.prising{
+    margin: auto;
+    width: 75%;
+    background-color: #eceaea;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: #173051;
+    font-family: 'Montserrat', sans-serif;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.8rem;
+}
+.top input{
+    width: 30%;
+    border: 2px solid #173051;
+    border-radius: 4px;
+}
+.top label{
+    font-weight: bold;
+}
+#vehicle-type{
+    width: 30%;
+    padding: 2px;
+}
+.price, .payment, .paymentPercent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.middle{
+    margin: auto;
+    width: 15%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.middle button{
+    border: 0;
+    width: 100%;
+    background-color: wheat;
+    color: #173051;
+    font-weight: bold;
+    background: #4B95FF;
+    padding: 0.2rem;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.middle p:hover{
+    background-color: #bbb;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.addedPricing{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    border: 0;
+}
+.uploadImg{
+    margin: 0 auto;
+    width: 75%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: yellow; */
+    height: 30%;
+    margin-top: 1rem;
+}
+.uploadImg label{ 
+    width:30%;
+    height: 3rem;
+    text-align:center;
+    line-height: 2.3rem;
+    background:#FEF1F1;
+    font-family: 'Montserrat', sans-serif;
+    color: #173051;
+    text-transform:Uppercase;
+    border-radius:15px;
+    cursor:pointer;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+    margin-right: 1rem;
+    font-size: 13px;
+    font-weight: bold;
+}
+.uploadImg label:hover{
+    background-color: #EED2D2;
+    border: 1px solid white;
+}
+.uploadImg input{
+    display: none;
+}
+.preview{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+}
+.preview img{
+    width:60%;
+    height: 100%;
+    display:none;
+    border-radius: 10px;
+}
+.done{
+    margin: auto;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.done a{
+    width: 100%;
+    background-color: wheat;
+    color: #173051;
+    font-weight: bold;
+    background: #4B95FF;
+    padding: 0.2rem;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
 
 
 

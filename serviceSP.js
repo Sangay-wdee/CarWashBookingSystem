@@ -156,6 +156,17 @@ function newElement() {
   }
   document.getElementById("myInput").value = "";
  
+  // create add input text field
+  // var text = document.createElement('input');
+  //   text.type = 'text';
+  //   text.id = 'addText';
+  //   text.value = 'fill';
+  //   text.className = 'addText';
+
+  //   var container = document.getElementById('serviceDescription')
+  //   container.appendChild(text)
+  //   container.style.display = "block"
+    // container.className("addInfo")
 
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
@@ -167,6 +178,53 @@ function newElement() {
     close[i].onclick = function() {
       var div = this.parentElement;
       div.style.display = "none";
+      // var input = document.getElementById('addText')
+      // input.remove()
     }
   }
 }
+
+//adding prising
+    var list1 = [];
+		var list2 = [];
+		var list3 = [];
+		var list4 = [];
+
+		var n = 1;
+		var x = 0;
+
+		function addPricing(){
+
+			var AddRown = document.getElementById('show');
+			var NewRow = AddRown.insertRow(n);
+
+			list1[x] = document.getElementById("vehicle-type").value;
+			list2[x] = document.getElementById("fee").value;
+			list3[x] = document.getElementById("percent").value;
+			list4[x] = document.getElementById("pay").value;
+
+			var cel1 = NewRow.insertCell(0);
+			var cel2 = NewRow.insertCell(1);
+			var cel3 = NewRow.insertCell(2);
+			var cel4 = NewRow.insertCell(3);
+
+			cel1.innerHTML = list1[x];
+			cel2.innerHTML = list2[x];
+			cel3.innerHTML = list3[x];
+			cel4.innerHTML = list4[x];
+
+			n++;
+			x++;
+      function remove() {
+        
+      }
+		}
+    //Upload image
+    function showPreview(event){
+      if(event.target.files.length > 0){
+        var src = URL.createObjectURL(event.target.files[0]);
+        var preview = document.getElementById("file-ip-1-preview");
+        preview.src = src;
+        preview.style.display = "block";
+      }
+    }

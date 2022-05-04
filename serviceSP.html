@@ -21,24 +21,22 @@
                 <h2>CarWash</h2>
             </div>
             <nav id="navbar">
-                <a id="menu1" href="registeredSP.html" class='menu'>Reservations</a>
                 <a id="menu2" href="#" class="menu active">Services</a>
+                <a id="menu1" href="registeredSP.html" class='menu'>Reservations</a>
             </nav>
             <div class="rightCompo">
-                <a href="userprofile.html" id="u-profile"><i class="fa fa-user fa-lg"></i></a>
+                <a href="spProfilePage.html" id="u-profile"><i class="fa fa-user fa-lg"></i></a>
                 <h4>User Name</h4>
                 <div class="dropdown">
                     <i class="fa fa-bars fa-2x" onclick="myFunction()" id="hamburg" style="cursor:pointer;"></i>
                     <div id="myDropdown" class="dropdown-content">
-                        <a href="#">profile</a>
+                        <a href="spProfilePage.html">profile</a>
                         <a href="#">feedback</a>
-                        <a href="">services</a>
-                        <a href="landingPage.html" id="logOut" onclick="logOut()">logout</a>
+                        <a href="loginPage.html" id="logOut" onclick="logOut()">logout</a>
                     </div>
                 </div>
             </div>
         </header>
-
         <!-- body content -->
         <div class="content">
             <div id="myDIV" class="header">
@@ -59,6 +57,57 @@
 
             <ul id="myUL">
             </ul>
+            <div class="prising">
+                <div class="top">
+                    <select name="" id="vehicle-type">
+                        <option disabled selected hidden>Vehicle Type</option>
+                        <option value="Small Type">Small Type</option>
+                        <option value="Medium Type">Medium Type</option>
+                        <option value="Heavy Type">Heavy Type</option>
+                        <option value="All Type">All Type</option>
+                    </select>
+                    <div class="price">
+                        <label for="">Price: Nu.</label>
+                        <input type="number" id="fee" value="">
+                    </div>
+                    <div class="paymentPercent">
+                        <label for="">Advance Payment(%): </label>
+                        <input type="text" id="percent">
+                    </div>
+                    <div class="payment">
+                        <label for="">Advance Payment: Nu.</label>
+                        <input type="number" id="pay">
+                    </div>
+                </div>
+                <div class="middle">
+                    <button onclick="addPricing()">Add</button>
+                </div>
+                <!-- <div class="bottom" id="bottom">
+                    <div class="addedPricing" id="added-pricing">
+                    </div>
+                </div> -->
+                <table border="4" id="show">
+                    <thead>
+                        <tr>
+                            <th>Vehicle Type</th>
+                            <th>Price</th>
+                            <th>Advance Payment(%)</th>
+                            <th>Advance Payment</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="uploadImg">
+                <div class="preview">
+                    <img id="file-ip-1-preview">
+                </div>
+                <label for="file-ip-1">Upload Picture</label>
+                <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);" required>
+            </div>
+            <div class="done">
+                <a href="#">Done</a>
+            </div>
+
 
             <div class="feedback">
                 <i class="far fa-comment-dots fa-lg"></i>
@@ -67,7 +116,7 @@
             <div class="feedbackBottom">
                 <div class="feedbackLink">
                     <i id="chat-bottom" class="far fa-comment-dots fa-2x"></i>
-                    <p>Help us to improve. Click on <strong style="color:#4B95FF"> Chat icon</strong> to provide your
+                    <p>Help us to improve. Click on <strong style="color:#4B95FF">Chat icon</strong> to provide your
                         <strong style="color:#4B95FF">Feedback</strong>.
                     </p>
                 </div>
