@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right,  #4B95FF 0%,#4B95FF 30%,white 30%, white 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 70%;
+    height: 80%;
+    background-color: #264368;
+    background: linear-gradient(to right,  #173051 0%, #4B95FF 100%);
+    box-shadow: rgba(0, 0, 0, 0.15) 6.4px 6.4px 4.2px;
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    display: flex;
+    flex: 1.2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: yellow; */
+}
+/* #subInfo{
+    margin-left: 0.8rem;
+    color:rgb(234, 230, 230);
+    text-align: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+} */
+.circles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    position: relative;
+    top: 10%;
+    right: 30%;
+}
+.circles p{
+    padding: 7px;
+    border-radius: 100%;
+    background-color:#4B95FF;
+}
+.left h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3em;
+    margin-left: 0.8rem;
+}
+.left-heading h3{
+    color: white;
+    margin-left: 0.8rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.right{
+    display: flex;
+    flex: 2.5;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: rgb(53, 53, 45); */
+
+}
+.right p{
+    padding: 1.5rem;
+    text-align: justify;
+    /* color: #173051; */
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.right textarea{
+    width: 70%;
+    height: 50%;
+    border: 2px solid #4B95FF ;
+    border-radius: 10px;
+    background-color: #3b659c; 
+    color: white;
+    outline: none;
+    padding: 0.2rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+textarea::placeholder{
+    color: white;
+}
+textarea:hover{
+    border: 2px solid  #173051;
+}
+.right a{
+    width: 15%;
+    text-decoration: none;
+    padding: 0.4rem;
+    background-color: white;
+    text-align: center;
+    color:#173051;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+.right a:hover{
+    background-color: rgb(233, 232, 232);
+
+}
+
+
+
+.back-arrow{
+    position: absolute;
+    left: 17%;
+    top: 13%; 
+}
+.back-arrow i{
+    /* color:#173051; */
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+.back-arrow i:hover{
+    /* border: 2px solid white; */
+    color: #4B95FF;
+}
